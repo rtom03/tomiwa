@@ -1,20 +1,5 @@
 import { useState, useEffect } from "react";
-import {
-  Moon,
-  Sun,
-  Menu,
-  X,
-  Github,
-  Linkedin,
-  Mail,
-  ExternalLink,
-  Code2,
-  Briefcase,
-  User,
-  Phone,
-} from "lucide-react";
 import Footer from "./components/Footer";
-import { experience, projects, skills } from "./constants";
 import About from "./tabs/About";
 import Projects from "./tabs/Projects";
 import Contact from "./tabs/Contact";

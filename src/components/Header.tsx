@@ -1,5 +1,4 @@
 import { Menu, Moon, Sun, X } from "lucide-react";
-import React from "react";
 import type { HeaderType } from "../constants/_index";
 
 const Header = ({

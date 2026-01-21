@@ -1,5 +1,4 @@
-import { Github, Linkedin, Mail, MessageCircleDashed } from "lucide-react";
-import React from "react";
+import { Github, Linkedin, MessageCircleDashed } from "lucide-react";
 
 const Contact = () => {
   return (
