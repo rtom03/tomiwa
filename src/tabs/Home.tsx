@@ -1,7 +1,10 @@
-import React from "react";
 import { skills } from "../constants";
 
-const Home = ({ setActiveTab }) => {
+const Home = ({
+  setActiveTab,
+}: {
+  setActiveTab: React.Dispatch<React.SetStateAction<string>>;
+}) => {
   return (
     <div className="space-y-16">
       <section className="min-h-[80vh] flex items-center">

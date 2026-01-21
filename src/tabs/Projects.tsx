@@ -1,4 +1,3 @@
-import React from "react";
 import { projects } from "../constants";
 import { Code2, ExternalLink } from "lucide-react";
 
