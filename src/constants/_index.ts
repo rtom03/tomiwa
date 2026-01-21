@@ -1,8 +1,8 @@
 export interface HeaderType {
-  setActiveTab: (tab: string) => string;
+  setActiveTab: React.Dispatch<React.SetStateAction<string>>;
   activeTab: string;
   darkMode: boolean;
-  setDarkMode: (darkMode: boolean) => boolean;
+  setDarkMode: React.Dispatch<React.SetStateAction<boolean>>;
   mobileMenuOpen: boolean;
-  setMobileMenuOpen: (mobileMenuOpen: boolean) => boolean;
+  setMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
