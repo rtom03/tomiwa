@@ -52,16 +52,43 @@ const experience = [
 const skills = [
   {
     category: "Frontend",
-    items: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Vue.js"],
+    items: [
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "useQuery",
+      "Redux- Thunk/Saga",
+    ],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "Django", "FastAPI", "PostgreSQL"],
+    items: [
+      "Node.js (Express)",
+      "NestJs",
+      ".Net",
+      "Django",
+      "FastAPI",
+      "PostgreSQL (prisma)",
+      "Mysql",
+      "MongoDb (mongoose)",
+    ],
   },
-  { category: "Tools", items: ["Git", "Docker", "AWS", "CI/CD", "MongoDB"] },
+  {
+    category: "Tools",
+    items: [
+      "Git",
+      "Docker",
+      "AWS",
+      "CI/CD",
+      "Jenkins",
+      "Micro-Service",
+      "Kafka",
+      "RabbitMQ",
+    ],
+  },
   {
     category: "Other",
-    items: ["REST API", "GraphQL", "WebSockets", "Redis", "Nginx"],
+    items: ["REST API", "GraphQL", "WebSockets", "Chrome API", "WebHooks"],
   },
 ];
 export { projects, skills, experience };
