@@ -14,7 +14,7 @@ const projects = [
     link: "#",
   },
   {
-    title: "AI Content Generator",
+    title: "Astronomer Simulator",
     description: "AI-powered content creation tool with modern UI/UX",
     tech: ["Next.js", "OpenAI API", "Tailwind", "Vercel"],
     link: "#",
