@@ -13,7 +13,7 @@ const Header = ({
     <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 dark:bg-gray-950/80 backdrop-blur-md border-b border-gray-800">
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+          <div className="text-2xl font-bold bg-linear-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
             TR
           </div>
           {/* Desktop Navigation */}

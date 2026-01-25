@@ -3,7 +3,7 @@ import { experience } from "../constants";
 const About = () => {
   return (
     <div className="max-w-4xl mx-auto py-12">
-      <h1 className="text-5xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+      <h1 className="text-5xl font-bold mb-8 bg-linear-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
         About Me
       </h1>
       <div className="space-y-8">

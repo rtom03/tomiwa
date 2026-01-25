@@ -1,9 +1,44 @@
-import { Github, Linkedin, MessageCircleDashed } from "lucide-react";
+import {
+  Github,
+  Linkedin,
+  LoaderCircle,
+  MessageCircleDashed,
+} from "lucide-react";
+import { useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 
 const Contact = () => {
+  const [loading, setLoading] = useState<boolean>(false);
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const form = event.currentTarget;
+    try {
+      setLoading(!loading);
+      let formData = new FormData(event.currentTarget);
+      formData.append("access_key", "8483155a-3869-43c4-87b3-8b87e7f12ace");
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
+      });
+      if (response.ok) {
+        form.reset();
+        toast(
+          "“Thanks for the ping! 🚀 I’ll ACK this faster than a hotfix in prod — swift response incoming.” 😄",
+        );
+        setLoading(false);
+      } else {
+        form.reset();
+        toast("An error occured while sending! pls try again");
+        setLoading(false);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
   return (
     <div className="max-w-2xl mx-auto py-12">
-      <h1 className="text-5xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+      <ToastContainer />
+      <h1 className="text-5xl font-bold mb-8 bg-linear-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
         Get in Touch
       </h1>
       <p className="text-gray-400 mb-12 text-lg">
@@ -60,23 +95,30 @@ const Contact = () => {
         </a>
       </div>
 
-      <div className="bg-gray-800/50 dark:bg-gray-900/50 p-8 rounded-xl border border-gray-700">
+      <form
+        className="bg-gray-800/50 dark:bg-gray-900/50 p-8 rounded-xl border border-gray-700"
+        onSubmit={onSubmit}
+      >
         <h2 className="text-2xl font-bold mb-6 text-white">Mail me directly</h2>
         <div className="space-y-4">
           <div>
             <label className="block text-gray-400 mb-2">Name</label>
             <input
-              type="text"
               className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-white"
               placeholder="Your name"
+              type="text"
+              name="name"
+              required
             />
           </div>
           <div>
             <label className="block text-gray-400 mb-2">Email</label>
             <input
-              type="email"
               className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-white"
               placeholder="your.email@example.com"
+              type="email"
+              name="email"
+              required
             />
           </div>
           <div>
@@ -85,16 +127,19 @@ const Contact = () => {
               rows={5}
               className="w-full px-4 py-3 bg-gray-900/50 border border-gray-700 rounded-lg focus:border-blue-500 focus:outline-none text-white"
               placeholder="Your message..."
+              name="message"
+              required
             />
           </div>
-          <button
-            onClick={() => alert("Message sent! (This is a demo)")}
-            className="w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300"
-          >
-            Send Message
+          <button className="w-full px-8 py-4 bg-linear-to-r from-blue-500 to-purple-500 rounded-lg font-semibold hover:shadow-lg hover:shadow-blue-500/50 transition-all duration-300 flex items-center justify-center">
+            {loading ? (
+              <LoaderCircle className="animate-spin" />
+            ) : (
+              "Send Message"
+            )}
           </button>
         </div>
-      </div>
+      </form>
     </div>
   );
 };
