@@ -1,35 +1,10 @@
 import { useState } from "react";
 import { Code2, ExternalLink, X } from "lucide-react";
-
-// Sample projects data - replace with your actual data
-const projects = [
-  {
-    title: "E-Commerce Platform",
-    description:
-      "A full-stack e-commerce solution with cart and payment integration",
-    tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=500&fit=crop",
-    fullDescription:
-      "A comprehensive e-commerce platform built with modern web technologies. Features include user authentication, product catalog, shopping cart, secure payment processing with Stripe, order management, and an admin dashboard for inventory control.",
-    liveLink: "https://example.com",
-    githubLink: "https://github.com/example",
-  },
-  {
-    title: "Task Management App",
-    description: "Collaborative task manager with real-time updates",
-    tech: ["React", "Firebase", "Tailwind CSS"],
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
-    fullDescription:
-      "A real-time collaborative task management application. Team members can create, assign, and track tasks with live updates. Includes drag-and-drop functionality, deadline reminders, and progress tracking dashboards.",
-    liveLink: "https://example.com",
-    githubLink: "https://github.com/example",
-  },
-];
+import { projects } from "../constants";
+import type { ProjectProps } from "../constants/_index";
 
 const Projects = () => {
-  const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedProject, setSelectedProject] = useState<ProjectProps | null>();
 
   return (
     <div className="py-12 px-4 max-w-6xl mx-auto">
@@ -55,7 +30,10 @@ const Projects = () => {
                 <ExternalLink size={20} />
               </button>
             </div>
-            <h3 className="text-2xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors">
+            <h3
+              className="text-2xl font-bold mb-3 text-white group-hover:text-blue-400 transition-colors cursor-pointer"
+              onClick={() => setSelectedProject(project)}
+            >
               {project.title}
             </h3>
             <p className="text-gray-400 mb-4 leading-relaxed">
