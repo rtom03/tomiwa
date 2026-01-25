@@ -2,24 +2,30 @@ const projects = [
   {
     title: "Astronomer Simulator",
     description:
-      "A full-stack e-commerce solution with cart and payment integration",
-    tech: ["React", "TailwindCss", "MongoDB", "Stripe"],
+      "Experience the magnificent dance of celestial bodies in real-time",
+    tech: ["React(Typescript)", "TailwindCss", "React Tricks", "Classbased"],
     image: "./astro.png",
     fullDescription:
-      "A comprehensive e-commerce platform built with modern web technologies. Features include user authentication, product catalog, shopping cart, secure payment processing with Stripe, order management, and an admin dashboard for inventory control.",
-    liveLink: "https://example.com",
-    githubLink: "https://github.com/example",
+      "Experience the magnificent dance of celestial bodies in real-time. Watch the Moon orbit Earth, Earth orbit the Sun, and the Sun orbit the Galactic Center—all in one mesmerizing visualization. With adjustable speed controls from slow-motion to ludicrous speeds, customizable motion trails, and interactive controls, explore millions of years of cosmic motion in seconds. Perfect for space enthusiasts, students, and anyone curious about our place in the universe.",
+    liveLink: "https://astonomical-simulator.vercel.app/",
+    githubLink: "https://github.com/rtom03/astonomical-simulator",
   },
   {
-    title: "Task Management App",
-    description: "Collaborative task manager with real-time updates",
-    tech: ["React", "Firebase", "Tailwind CSS"],
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=500&fit=crop",
+    title: "Chat App",
+    description: "Because carrier pigeons were too slow and emails too formal",
+    tech: [
+      "React",
+      "NodeJs",
+      "Tailwind CSS",
+      "MongoDb",
+      "Socket.io",
+      "Daisy UI",
+    ],
+    image: "chatty.png",
     fullDescription:
-      "A real-time collaborative task management application. Team members can create, assign, and track tasks with live updates. Includes drag-and-drop functionality, deadline reminders, and progress tracking dashboards.",
-    liveLink: "https://example.com",
-    githubLink: "https://github.com/example",
+      "A real-time chat app built for when Slack feels too corporate and WhatsApp Web keeps logging you out. Features instant messaging powered by Socket.io (because setTimeout wasn't cutting it), MongoDB for storing all those 'quick sync?' messages, and a UI so smooth your PM might actually respond. Includes typing indicators to fuel your anxiety, message persistence so your bad jokes live forever, and React hooks because class components are so 2019. Warning: May cause excessive emoji usage and spontaneous GIF wars.",
+    liveLink: "https://chimeln.vercel.app/login",
+    githubLink: "https://github.com/rtom03/MERN_CA",
   },
 ];
 const experience = [

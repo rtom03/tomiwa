@@ -8,7 +8,7 @@ const Projects = () => {
 
   return (
     <div className="py-12 px-4 max-w-6xl mx-auto">
-      <h1 className="text-5xl font-bold mb-8 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+      <h1 className="text-5xl font-bold mb-8 bg-linear-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
         Projects
       </h1>
       <p className="text-gray-400 mb-12 text-lg">
@@ -79,12 +79,12 @@ const Projects = () => {
                 alt={selectedProject.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+              <div className="absolute inset-0 bg-linear-to-t from-gray-900 to-transparent"></div>
             </div>
 
             {/* Content */}
             <div className="p-8">
-              <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+              <h2 className="text-4xl font-bold mb-4 bg-linear-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
                 {selectedProject.title}
               </h2>
 

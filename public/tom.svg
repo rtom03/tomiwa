@@ -2,30 +2,30 @@
                   {/* T Letter */}
                   <path
                     d="M8 8 L20 8 L20 12 L16 12 L16 32 L12 32 L12 12 L8 12 Z"
-                    fill="url(#gradient1)"
+                    fill="url(#linear1)"
                     className="group-hover:scale-110 transition-transform origin-center"
                   />
                   {/* R Letter with modern twist */}
                   <path
                     d="M24 8 L32 8 C35 8 37 10 37 13 C37 15 36 16.5 34 17.5 L38 32 L33 32 L30 18 L28 18 L28 32 L24 32 Z M28 12 L28 15 L31 15 C32 15 33 14.5 33 13.5 C33 12.5 32 12 31 12 Z"
-                    fill="url(#gradient2)"
+                    fill="url(#linear2)"
                     className="group-hover:scale-110 transition-transform origin-center"
                   />
                   {/* Accent dot */}
-                  <circle cx="40" cy="10" r="3" fill="url(#gradient3)" className="animate-pulse" />
+                  <circle cx="40" cy="10" r="3" fill="url(#linear3)" className="animate-pulse" />
                   
                   <defs>
-                    <linearGradient id="gradient1" x1="8" y1="8" x2="20" y2="32" gradientUnits="userSpaceOnUse">
+                    <linearlinear id="linear1" x1="8" y1="8" x2="20" y2="32" linearUnits="userSpaceOnUse">
                       <stop offset="0%" stopColor="#60A5FA" />
                       <stop offset="100%" stopColor="#A78BFA" />
-                    </linearGradient>
-                    <linearGradient id="gradient2" x1="24" y1="8" x2="38" y2="32" gradientUnits="userSpaceOnUse">
+                    </linearlinear>
+                    <linearlinear id="linear2" x1="24" y1="8" x2="38" y2="32" linearUnits="userSpaceOnUse">
                       <stop offset="0%" stopColor="#A78BFA" />
                       <stop offset="100%" stopColor="#EC4899" />
-                    </linearGradient>
-                    <radialGradient id="gradient3" cx="40" cy="10" r="3" gradientUnits="userSpaceOnUse">
+                    </linearlinear>
+                    <radiallinear id="linear3" cx="40" cy="10" r="3" linearUnits="userSpaceOnUse">
                       <stop offset="0%" stopColor="#F472B6" />
                       <stop offset="100%" stopColor="#A78BFA" />
-                    </radialGradient>
+                    </radiallinear>
                   </defs>
                 </svg>
