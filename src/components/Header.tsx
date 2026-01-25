@@ -22,7 +22,7 @@ const Header = ({
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab)}
-                className={`capitalize font-medium transition-colors relative ${
+                className={`capitalize font-medium transition-colors relative cursor-pointer ${
                   activeTab === tab
                     ? "text-blue-400"
                     : "text-gray-400 hover:text-white"

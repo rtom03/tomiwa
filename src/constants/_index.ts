@@ -6,3 +6,13 @@ export interface HeaderType {
   mobileMenuOpen: boolean;
   setMobileMenuOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
+
+export interface ProjectProps {
+  title: string;
+  description: string;
+  tech: string[];
+  image: string;
+  fullDescription: string;
+  liveLink: string;
+  githubLink: string;
+}
