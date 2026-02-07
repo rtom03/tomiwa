@@ -16,3 +16,16 @@ export interface ProjectProps {
   liveLink: string;
   githubLink: string;
 }
+
+export interface Place {
+  id: number;
+  title: string;
+  childIds: number[];
+}
+
+export interface PlaceTreeProps {
+  id: number;
+  parentId: number;
+  placesById: { [key: number]: Place };
+  onComplete: (parentId: number, childId: number) => void;
+}

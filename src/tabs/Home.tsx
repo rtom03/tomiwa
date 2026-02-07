@@ -18,7 +18,7 @@ const Home = ({
             Tomiwa Raheem
           </h1>
           <p className="text-2xl md:text-3xl text-gray-300 dark:text-gray-400 mb-8">
-            Fullstack Developer
+            Software Engineer
           </p>
           <p className="text-sm text-gray-400 dark:text-gray-500 mb-12 max-w-2xl leading-relaxed">
             Crafting elegant solutions to complex problems — but only after
