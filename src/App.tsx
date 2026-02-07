@@ -5,6 +5,7 @@ import Projects from "./tabs/Projects";
 import Contact from "./tabs/Contact";
 import Home from "./tabs/Home";
 import Header from "./components/Header";
+import Codex from "./tabs/Codex";
 
 export default function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -32,6 +33,9 @@ export default function App() {
 
       case "contact":
         return <Contact />;
+
+      case "artifacts":
+        return <Codex />;
 
       default:
         return null;
